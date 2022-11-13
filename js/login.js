@@ -17,7 +17,7 @@ Array.prototype.slice.call(forms).forEach(function (form) {
 					user[name] = value;
 				}
 				localStorage.setItem("user", JSON.stringify(user));
-				window.location.replace("/index.html");
+				window.location.replace("index.html");
 			}
 		},
 		false
@@ -36,7 +36,7 @@ const parseJwt = (token) => {
 
 function handleCredentialResponse(response) {
   localStorage.setItem("user", JSON.stringify(parseJwt(response.credential)));
-	window.location.replace("/index.html");
+	window.location.replace("index.html");
 }
 window.onload = function () {
 	google.accounts.id.initialize({
