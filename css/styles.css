@@ -157,11 +157,31 @@ footer p {
   }
 }
 
-.signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
+.hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hr-lines:before{
+  content:" ";
+  height: 1px;
+  width: 40%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.hr-lines:after{
+  content:" ";
+  height: 1px;
+  width: 40%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
 #spinner-wrapper {
