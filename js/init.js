@@ -46,5 +46,5 @@ let getJSONData = function(url){
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-	if (!isLoggedIn()) window.location.replace("/login.html");
+	if (!isLoggedIn()) window.location.replace("login.html");
 });
